@@ -58,22 +58,34 @@ section {
     align-items: center;
 }
 
-.galeria_caixa {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-}
-
 .galeria img {
     transition: transform 0.3s;
+}
+.galeria_caixa {
+    width: 100%;
+    max-width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .galeria {
     height: 200px;
     width: 20%;
-    border:thick solid;
+    border: thick solid;
     padding: 5px;
     margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galeria {
+        width: 100%;
+    }
 }
 
 .galeria:hover {
