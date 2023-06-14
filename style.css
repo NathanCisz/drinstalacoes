@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+
+    .logo {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+  }
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+
+    i {
+        font-size: 1rem;
+        color: white;
+        margin-right: 10px;
+    }
+  }
+
+i {
+    font-size: 2.2rem;
+    color: white;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.flex > * {
+    margin-right: 10px;
+}
+
+.flex > *:last-child {
+    margin-right: 0;
+}
+
+header {
+    width: 100%;
+    padding: 30px 4%;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 999;
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 4%; /* Reduzir o padding para economizar espaço */
+    }
+
+    header ul li {
+        margin: 5px 0;
+        display: inline-flex;
+    }
+}
+
+.texto {
+    padding: 20px;
+  }
+  
+  section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .texto {
+      padding: 10px;
+    }
+    
+    section h1 {
+      font-size: 20px;
+    }
+    
+    section p {
+      font-size: 14px;
+    }
+  }
+
+.servico {
+    height: 496px;
+    display: flex;
+}
+
+.certificado1 {
+    height: 253px;
+}
+
+.certificado2 {
+    height: 260px;
+}
+
+.galeria img {
+    transition: transform 0.3s;
+}
+.galeria_caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    border: thin solid;
+    width: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 27px 21px 27px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galeria {
+        width: 100%;
+    }
+}
+.galeria:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer {
+    margin-top: auto;
+}
